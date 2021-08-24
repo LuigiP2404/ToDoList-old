@@ -17,7 +17,7 @@
     </header>
     <section id="assignment">
       <h2>To-Do</h2>
-      <input type="text" v-model="newTask">
+      <input type="text" v-model="newTask" @keyup.enter="addTask">
       <button @click="addTask">Aggiungi</button>
       <ul v-if="show">
         <li v-for="(task,id) in tasks" :key="task">{{ id + 1 }}: {{ task }} <span @click="removeTask(id)"><i class="fas fa-trash" style="color: crimson"></i></span></li>
