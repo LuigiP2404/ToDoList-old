@@ -29,4 +29,4 @@ const app = Vue.createApp({
         }
     }
 });
-app.mount('#app');
+app.mount('#assignment');
